@@ -3,12 +3,13 @@ import requests
 import json
 import redis
 from flask import Flask, jsonify, request
+from multiprocessing import Process
 
 # Configuration
 REDIS_HOST = os.getenv('REDIS_HOST', 'redis-12047.c334.asia-southeast2-1.gce.redns.redis-cloud.com')
 REDIS_PORT = int(os.getenv('REDIS_PORT', 12047))
 REDIS_DB = int(os.getenv('REDIS_DB', 0))
-REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', 'ZN4J5MXIu3TNchvB7VpY9tMR1VosNQue')  # Add this line if your Redis instance requires a password
+REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', 'ZN4J5MXIu3TNchvB7VpY9tMR1VosNQue')
 WEATHER_API_KEY = os.getenv('WEATHER_API_KEY', '3VJJUHR2YD5NMBZ4MGTQ2B5GP')
 WEATHER_API_URL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'
 
