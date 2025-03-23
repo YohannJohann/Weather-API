@@ -27,4 +27,5 @@ REDIS_DB=0(Insert here)
 REDIS_PASSWORD=(Insert here)
 
 WEATHER_API_KEY=(Insert here)"
+- Remove the quotation marks
 - Save the file using "Save as" then choose "All files" in "Save as type:"
