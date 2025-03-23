@@ -17,6 +17,7 @@ A weather API that fetches and returns weather data
 # Encrypting the API and PASSWORD
 - Create a .txt file in your program directory
 - Paste and modify the following:
+
 "# .env
 REDIS_HOST=(Insert here)
 
